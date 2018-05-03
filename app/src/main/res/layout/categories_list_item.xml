@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/list_item_main_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/list_item_number_rl"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/rlDescription"
+            android:layout_alignTop="@+id/rlDescription">
+
+            <TextView
+                android:id="@+id/tvItemNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                tools:text="9999" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="2dp"
+                android:textColor="#4F4F4F"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:text="Adem" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvName"
+                android:layout_gravity="center_vertical|end"
+                android:textColor="#000"
+                tools:text="Ekzistojne 15 Ajete" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rlDescription"
+            android:background="#2D7300"></RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

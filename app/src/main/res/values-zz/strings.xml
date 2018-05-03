@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">About</string>
+    <string name="ajetikuranor">"Ayah in Qur'an"</string>
+    <string name="ajetithot">says:</string>
+    <string name="app_credit">"Application developer:
+Ibrahim Vasija
+
+Application distributor:"</string>
+    <string name="app_credits">Ibrahim Vasija</string>
+    <string name="app_descrip">"The purpose of this application is to help people who are interested in understanding Qur'an, explanations and interpretations of rules, surahs and topics about life in Qur'an.
+
+Usage
+In Main menu are 4 buttons: categories, reading Qur'an in English language, reading Qur'an in Arabic language with latin words, reading Qur'an in Arabic language.
+
+Categories:
+On this page we show a series of topics that Qur'an talks about, also there's a text field for searching a category. After clicking to the topic that you are interested in it will open a new page where there will be all of ayahs that are talking about that topic. To change the pages you will need only to swipe your finger to the sides.
+
+Reading Qur'an in English language:
+On this page you can read Qur'an, first you need to choose the surah you are interested, after selecting the surah you will need to choose the ayah number then the application will highlight the selected ayah. To change the pages you will need only to swipe your finger to the sides.
+
+Reading Qur'an in Arabic language with latin words:
+On this page you can read Qur'an, first you need to choose the surah you are interested, after selecting the surah you will need to choose the ayah number then the application will highlight the selected ayah. To change the pages you will need only to swipe your finger to the sides.
+
+Reading Qur'an in Arabic language:
+On this page you can read Qur'an, first you need to choose the surah you are interested, after selecting the surah you will need to choose the ayah number then the application will highlight the selected ayah. To change the pages you will need only to swipe your finger to the sides."</string>
+    <string name="app_descrip2">"The purpose of this application is to help people who are interested in understanding Qur'an, explanations and interpretations of rules, surahs and topics about life in Qur'an.
+
+In each windows there can be more than one page, so please swipe your finger to check if there are more pages.
+
+Usage
+In Main menu are 3 buttons: categories, reading Qur'an in English language, reading Qur'an in Arabic language with latin words.
+
+Categories:
+On this page we show a series of topics that Qur'an talks about, also there's a text field for searching a category. After clicking to the topic that you are interested in it will open a new page where there will be all of ayahs that are talking about that topic. To change the pages you will need only to swipe your finger to the sides.
+
+Reading Qur'an in English language:
+On this page you can read Qur'an, first you need to choose the surah you are interested, after selecting the surah you will need to choose the ayah number then the application will highlight the selected ayah. To change the pages you will need only to swipe your finger to the sides.
+
+Reading Qur'an in Arabic language with latin words:
+On this page you can read Qur'an, first you need to choose the surah you are interested, after selecting the surah you will need to choose the ayah number then the application will highlight the selected ayah. To change the pages you will need only to swipe your finger to the sides.
+
+Reading Qur'an in Arabic language:
+On this page you can read Qur'an, first you need to choose the surah you are interested, after selecting the surah you will need to choose the ayah number then the application will highlight the selected ayah. To change the pages you will need only to swipe your finger to the sides."</string>
+    <string name="app_name">"Search in Qur'an"</string>
+    <string name="currlang">zz</string>
+    <string name="ekzistojne">In this category exists</string>
+    <string name="gjuhaanglisht">English</string>
+    <string name="gjuhagjermanisht">Deutsch</string>
+    <string name="gjuhashqip">Albanian</string>
+    <string name="gjuhaturqisht">Turkish</string>
+    <string name="instructions">Instructions</string>
+    <string name="kategorite_btn_shqip">Categories</string>
+    <string name="kerkodetalisht">Write the word to search:</string>
+    <string name="kerkokthehungapershkrimi_shqip">Back</string>
+    <string name="kerkotagat_btn_shqip">Categories</string>
+    <string name="konfirmo">Save changes</string>
+    <string name="lexokuranin_arabik">"Read Qur'an in Arabic language"</string>
+    <string name="lexokuranin_latin">"Read Qur'an in latin words"</string>
+    <string name="lexokuranin_shqip">"Read Qur'an"</string>
+    <string name="listaajeteve">Chosen Category:</string>
+    <string name="neemer">In the name of All-llah the most Beneficent the most Merciful</string>
+    <string name="neemertransliteration">Bismillaah ir rahmaan ir raheem</string>
+    <string name="nextpage">Next page</string>
+    <string name="no">No</string>
+    <string name="nomorenext">There is no more pages</string>
+    <string name="nomoreprev">There is no previous pages</string>
+    <string name="numriiajeteve">ayah</string>
+    <string name="ok">All right</string>
+    <string name="originofdb">"All translated data are from website
+"<a href="http://qurandatabase.org/">http://qurandatabase.org</a>"
+We apologize if there are any errors."</string>
+    <string name="perk_ang">"Translated into English from:
+Muhammad Habib Shakir"</string>
+    <string name="perk_de">"Translated into German from:
+Adel Theodor Khoury"</string>
+    <string name="perk_shqip">"Translated into Albanian from:
+Hasan Nahi"</string>
+    <string name="perk_tr">"Translated into Turkish from:
+Abdulbaki Gölpınarlı"</string>
+    <string name="pershkrimiajetit">Click here for more</string>
+    <string name="prevpage">Previous page</string>
+    <string name="quit">Exit</string>
+    <string name="really_quit">Are you sure you want to exit?</string>
+    <string name="shkruajketu">Write here</string>
+    <string name="specialTHNX">"Special thanks to:
+Labinot Gashi for translation into German,
+Arlind Hajredinaj for helping while programming."</string>
+    <string name="swipenext">Swipe left to go to next page</string>
+    <string name="swipeprev">Swipe right to go to previous page</string>
+    <string name="title_activity_listen_quran">"Listen Qur'an"</string>
+    <string name="version">v 12.4</string>
+    <string name="wait">Please wait…</string>
+    <string name="yes">Yes</string>
+    <string name="zgjedhajetin">Select ayah</string>
+    <string name="zgjedhgjuhen">Languages</string>
+    <string name="zgjedhoptions">Settings</string>
+    <string name="zgjedhsuren_shqip">Select surah</string>
+</resources>
