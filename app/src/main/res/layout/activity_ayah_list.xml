@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/borders"
+    tools:context="com.kerko.ne.kuran.ListCategoriesActivity">
+
+    <TextView
+        android:id="@+id/KategoriaShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/KategoriaShow"
+        android:paddingBottom="50dp"
+        android:paddingTop="95dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

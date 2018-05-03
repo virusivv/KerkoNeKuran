@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/borders"
+    tools:context="com.kerko.ne.kuran.ListCategoriesActivity">
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <ImageView
+        android:id="@+id/imgtop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtKategorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/kerkodetalisht"
+        android:textColor="#000000"
+        android:textColorHint="#50505050" />
+
+    <RelativeLayout
+        android:id="@+id/rlRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/imgbot"
+        android:paddingBottom="50dp"
+        android:paddingTop="95dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgbot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

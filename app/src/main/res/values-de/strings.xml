@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Zur Startseite</string>
+    <string name="abc_action_bar_home_description_format">%1$s: %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s: %3$s</string>
+    <string name="abc_action_bar_up_description">Nach oben</string>
+    <string name="abc_action_menu_overflow_description">Weitere Optionen</string>
+    <string name="abc_action_mode_done">Fertig</string>
+    <string name="abc_activity_chooser_view_see_all">Alle ansehen</string>
+    <string name="abc_activitychooserview_choose_application">App auswählen</string>
+    <string name="abc_searchview_description_clear">Suchanfrage löschen</string>
+    <string name="abc_searchview_description_query">Suchanfrage</string>
+    <string name="abc_searchview_description_search">Suchen</string>
+    <string name="abc_searchview_description_submit">Suchanfrage senden</string>
+    <string name="abc_searchview_description_voice">Sprachsuche</string>
+    <string name="abc_shareactionprovider_share_with">Freigeben für</string>
+    <string name="abc_shareactionprovider_share_with_application">Freigeben für %s</string>
+    <string name="abc_toolbar_collapse_description">Minimieren</string>
+    <string name="about">About</string>
+    <string name="ajetikuranor">"Vers im Qur'an"</string>
+    <string name="ajetithot">sagt:</string>
+    <string name="app_credit">"App- Entwickler:
+Ibrahim Vasija
+
+App- Vertrieb:"</string>
+    <string name="app_credits">Ibrahim Vasija</string>
+    <string name="app_descrip">"Der Zweck dieser App ist es, Leuten zu helfen die darin interessiert sind den Qur'an zu verstehen, Regeln zu erklären und interpretieren, sowie Suren und Themen übers Leben aus dem Qur'an zu vermitteln.
+
+Das Häuptmenü ist über 4 Knöpfe zu bedienen: Kategorien, Qur'an auf Deutsch lesen, Qur'an auf arabisch mit lateinischen Buchstaben lesen, Qur'an in Arabisch lesen.
+
+Kategorien:
+Auf dieser Seite zeigen wir eine Serie von Themen über die im Qur'an gesprochen wird. Außerdem ist dort ein Eingabefeld zum Suchen einer bestimmten Kategorie. Nach Auswahl des Themas, öffnet sich eine neue Seite, die alle Verse über dieses Thema zeigt. Zum wechseln der Seite muss man nur mit dem Finger seitlich wischen.
+
+Qur'an auf Deutsch lesen:
+Auf dieser Seite können sie den Qur'an auf deutsch lesen, zunächst suchen sie die Sure die sie interessiert, danach suchen sie den gewünschten Vers, welcher dann hervorgehoben wird. Um zwischen den Seiten zu wählen müssen sie nur mit den Fingern seitlich wischen.
+
+Qur'an auf arabisch mit lateinischen Buchstaben lesen:
+Auf dieser Seite können sie den Qur'an auf arabisch mit lateinischen Buchstaben lesen, zunächst suchen sie die Sure die sie interessiert, danach suchen sie den gewünschten Vers, welcher dann hervorgehoben wird. Um zwischen den Seiten zu wählen müssen sie nur mit den Fingern seitlich wischen.
+
+Qur'an in Arabisch lesen:
+Auf dieser Seite können sie den Qur'an auf arabisch lesen, zunächst suchen sie die Sure die sie interessiert, danach suchen sie den gewünschten Vers, welcher dann hervorgehoben wird. Um zwischen den Seiten zu wählen müssen sie nur mit den Fingern seitlich wischen."</string>
+    <string name="app_descrip2">"Der Zweck dieser App ist es, Leuten zu helfen die darin interessiert sind den Qur'an zu verstehen, Regeln zu erklären und interpretieren, sowie Suren und Themen übers Leben aus dem Qur'an zu vermitteln.
+
+In allen Fenstern kann sich mehr als eine Seite befinden, also bitte zur Seite wischen um sicher zu gehen, dass keine weiteren Seiten vorhanden sind.
+
+Das Häuptmenü ist über 4 Knöpfe zu bedienen: Kategorien, Qur'an auf Deutsch lesen, Qur'an auf arabisch mit lateinischen Buchstaben lesen, Qur'an in Arabisch lesen.
+
+Kategorien:
+Auf dieser Seite zeigen wir eine Serie von Themen über die im Qur'an gesprochen wird. Außerdem ist dort ein Eingabefeld zum Suchen einer bestimmten Kategorie. Nach Auswahl des Themas, öffnet sich eine neue Seite, die alle Verse über dieses Thema zeigt. Zum wechseln der Seite muss man nur mit dem Finger seitlich wischen.
+
+Qur'an auf Deutsch lesen:
+Auf dieser Seite können sie den Qur'an auf deutsch lesen, zunächst suchen sie die Sure die sie interessiert, danach suchen sie den gewünschten Vers, welcher dann hervorgehoben wird. Um zwischen den Seiten zu wählen müssen sie nur mit den Fingern seitlich wischen.
+
+Qur'an auf arabisch mit lateinischen Buchstaben lesen:
+Auf dieser Seite können sie den Qur'an auf arabisch mit lateinischen Buchstaben lesen, zunächst suchen sie die Sure die sie interessiert, danach suchen sie den gewünschten Vers, welcher dann hervorgehoben wird. Um zwischen den Seiten zu wählen müssen sie nur mit den Fingern seitlich wischen.
+
+Qur'an in Arabisch lesen:
+Auf dieser Seite können sie den Qur'an auf arabisch lesen, zunächst suchen sie die Sure die sie interessiert, danach suchen sie den gewünschten Vers, welcher dann hervorgehoben wird. Um zwischen den Seiten zu wählen müssen sie nur mit den Fingern seitlich wischen."</string>
+    <string name="app_name">"Suche im Qur'an"</string>
+    <string name="currlang">de</string>
+    <string name="ekzistojne">In dieser Kategorie existiert</string>
+    <string name="gjuhaanglisht">Englisch</string>
+    <string name="gjuhagjermanisht">Deutsch</string>
+    <string name="gjuhashqip">Albanisch</string>
+    <string name="gjuhaturqisht">Türkisch</string>
+    <string name="instructions">Anleitung</string>
+    <string name="kategorite_btn_shqip">Kategorien</string>
+    <string name="kerkodetalisht">Suchbegriff eingeben:</string>
+    <string name="kerkokthehungapershkrimi_shqip">Zurück</string>
+    <string name="kerkotagat_btn_shqip">Kategorien</string>
+    <string name="konfirmo">Änderungen speichern</string>
+    <string name="lexokuranin_arabik">"Qur'an in Arabisch lesen"</string>
+    <string name="lexokuranin_latin">"Qur'an in Lateinischen Buchstaben lesen"</string>
+    <string name="lexokuranin_shqip">"Qur'an lesen"</string>
+    <string name="listaajeteve">Kategorie wählen:</string>
+    <string name="neemer">Im Namen Allahs, des Allerbarmers, des Barmherzigen</string>
+    <string name="neemertransliteration">Bismillaah ir rahmaan ir raheem</string>
+    <string name="nextpage">Nächste Seite</string>
+    <string name="no">Nein</string>
+    <string name="nomorenext">Keine weiteren Seiten</string>
+    <string name="nomoreprev">Keine vorherigen Seiten</string>
+    <string name="numriiajeteve">Vers</string>
+    <string name="ok">In Ordnung</string>
+    <string name="originofdb">" Alle übersetzten Inhalte sind Eigentum von:
+"<a href="http://qurandatabase.org/">http://qurandatabase.org</a>"
+ Wir entschuldigen uns für mögliche Fehler."</string>
+    <string name="perk_ang">Übersetzung ins Englische: Muhammad Habib Shakir</string>
+    <string name="perk_de">"Übersetzung ins Deutsch:
+Adel Theodor Khoury"</string>
+    <string name="perk_shqip">Übersetzung ins Albanische: Hasan Nahi</string>
+    <string name="perk_tr">Übersetzung ins Türkische: Abdulbaki Gölpınarlı</string>
+    <string name="pershkrimiajetit">Klicke hier für mehr</string>
+    <string name="prevpage">Vorherige Seite</string>
+    <string name="quit">Verlassen</string>
+    <string name="really_quit">Sicher verlassen?</string>
+    <string name="shkruajketu">Hier eingeben</string>
+    <string name="specialTHNX">"Besonderes Dankeschön an:
+Labinot Gashi Übersetzung ins Deutsche,
+Arlind Hajredinaj Unterstützung beim codieren der App."</string>
+    <string name="swipenext">Nach Links wischen für nächste Seite</string>
+    <string name="swipeprev">Nach rechts wischen für vorherige Seite</string>
+    <string name="title_activity_listen_quran">"Hören Qur'an"</string>
+    <string name="version">v 12.4</string>
+    <string name="wait">Bitte warten…</string>
+    <string name="yes">Ja</string>
+    <string name="zgjedhajetin">Vers auswählen</string>
+    <string name="zgjedhgjuhen">Sprachen</string>
+    <string name="zgjedhoptions">Einstellungen</string>
+    <string name="zgjedhsuren_shqip">Sure auswählen</string>
+</resources>
