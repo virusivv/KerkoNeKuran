@@ -13,10 +13,6 @@ import java.util.List;
 import Model.AyahListObject;
 import Model.CategoriesListObject;
 
-/**
- * Created by ivasija on 23.04.2018.
- */
-
 public class ListController {
 
 
@@ -70,6 +66,30 @@ public class ListController {
 
     }
 
+    public List<CategoriesListObject> getCategoriesLike(String locale, Context context, String tagu) {
+        String gjuha = "al";
+        if (locale.equals("zz")) {
+            gjuha = "en";
+        } else if (locale.equals("de")) {
+            gjuha = "de";
+        } else if (locale.equals("tr")) {
+            gjuha = "tr";
+        }
+        List<CategoriesListObject> returnList = new ArrayList<CategoriesListObject>();
+        Cursor c = mDb.rawQuery("select tagu.*, (select count (*) from crosstagajet crstag where crstag.tagid=tagu._id) as description from tbltaguiajetit_" + gjuha + " tagu where tagu.tagu like '" + tagu + "%' order by tagu.tagu;", null);
+        if (c != null) {
+            c.moveToFirst();
+            for (int i = 0; i < c.getCount(); i++) {
+                CategoriesListObject obj = new CategoriesListObject(c.getInt(0), c.getString(1), context.getString(R.string.ekzistojne) + " " + c.getString(2) + " " + context.getString(R.string.numriiajeteve));
+                returnList.add(obj);
+                c.moveToNext();
+            }
+            c.close();
+        }
+        return returnList;
+
+    }
+
     public List<AyahListObject> getAyahsForCategory(String locale, Context context, String tagu) {
         String gjuha = "al";
         if (locale.equals("zz")) {
@@ -98,4 +118,6 @@ public class ListController {
         }
         return returnList;
     }
+
+
 }

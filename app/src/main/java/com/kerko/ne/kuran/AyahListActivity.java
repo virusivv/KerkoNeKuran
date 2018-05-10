@@ -5,11 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 import java.util.List;
 
@@ -21,6 +26,7 @@ import Model.CategoriesListObject;
 
 public class AyahListActivity extends AppCompatActivity implements AyahsListAdapter.ListItemClickListener {
     String tagu = "";
+    String textToSearch = "";
     private List<AyahListObject> ayahsList;
     private AyahsListAdapter mAdapter;
     private RecyclerView mNumbersList;
@@ -36,7 +42,8 @@ public class AyahListActivity extends AppCompatActivity implements AyahsListAdap
         tagu = getIntent().getStringExtra("tagu");
         if (tagu.equals(""))
             this.finish();
-
+        TextView txt = (TextView) findViewById(R.id.KategoriaShow);
+        txt.setText(tagu);
         catListController = new ListController(this);
         ListController categoriesController = new ListController(this);
         categoriesController.open();
@@ -48,7 +55,9 @@ public class AyahListActivity extends AppCompatActivity implements AyahsListAdap
         mNumbersList.setHasFixedSize(true);
         mAdapter = new AyahsListAdapter(ayahsList.size(), ayahsList, this);
         mNumbersList.setAdapter(mAdapter);
+
     }
+
 
     @Override
     public void onListItemClick(int clickedItemIndex) {
@@ -83,7 +92,7 @@ public class AyahListActivity extends AppCompatActivity implements AyahsListAdap
         pershkrimetemarrura.setText(pershkrimi);
 
         dialog.setContentView(view);
-        dialog.setTitle(tagu + "Hello world");
+        dialog.setTitle(tagu);
         // now that the dialog is set up, it's time to show it
         dialog.show();
 

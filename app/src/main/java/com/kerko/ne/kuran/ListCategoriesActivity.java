@@ -5,8 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.List;
@@ -37,6 +40,41 @@ public class ListCategoriesActivity extends AppCompatActivity implements Categor
         ListController categoriesController = new ListController(this);
         categoriesController.open();
         categoriesList = categoriesController.getCategories("al", this);
+        categoriesController.close();
+        mNumbersList = (RecyclerView) findViewById(R.id.rv_numbers);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        mNumbersList.setLayoutManager(layoutManager);
+        mNumbersList.setHasFixedSize(true);
+        mAdapter = new CategoriesListAdapter(categoriesList.size(), categoriesList, this);
+        mNumbersList.setAdapter(mAdapter);
+
+        EditText et1 = (EditText) findViewById(R.id.txtKategorite);
+        et1.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                searchCategories(s.toString());
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+    }
+
+
+    public void searchCategories(String category) {
+
+        catListController = new ListController(this);
+        ListController categoriesController = new ListController(this);
+        categoriesController.open();
+        categoriesList = categoriesController.getCategoriesLike("al", this, category);
         categoriesController.close();
         mNumbersList = (RecyclerView) findViewById(R.id.rv_numbers);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
