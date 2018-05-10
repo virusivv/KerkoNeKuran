@@ -45,19 +45,11 @@ public class SurahController {
     }
 
 
-    public SurahObject getCategories(String locale, Context context, String surja) {
-        if (locale.equals("") || surja.equals(""))
+    public SurahObject getAyahsForSurah(String locale, Context context, int surja, String tabela) {
+        if (locale.equals("") || surja<1)
             return null;
-        String gjuha = "al";
-        if (locale.equals("zz")) {
-            gjuha = "en";
-        } else if (locale.equals("de")) {
-            gjuha = "de";
-        } else if (locale.equals("tr")) {
-            gjuha = "tr";
-        }
         SurahObject returnObject = null;
-        Cursor c = mDb.rawQuery("select * from tblajetetnekuran_" + gjuha + " where surja_emri = '" + surja + "'", null);
+        Cursor c = mDb.rawQuery("select * from "+tabela+" where surja_id = " + surja, null);
         if (c != null) {
             c.moveToFirst();
             ArrayList<String> ajetet = new ArrayList<String>();

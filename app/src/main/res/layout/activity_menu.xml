@@ -35,7 +35,8 @@
             android:layout_below="@id/btnKategorite"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="@string/lexokuranin_shqip" />
+            android:text="@string/lexokuranin_shqip"
+            android:onClick="btnLexoClicked"/>
 
         <Button
             android:id="@+id/btnLexoLatinisht"
@@ -44,7 +45,8 @@
             android:layout_below="@id/btnLexoGjuhe"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="@string/lexokuranin_latin" />
+            android:text="@string/lexokuranin_latin"
+            android:onClick="btnLexoClicked"/>
 
         <Button
             android:id="@+id/btnLexoArabisht"
@@ -53,7 +55,8 @@
             android:layout_below="@id/btnLexoLatinisht"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="@string/lexokuranin_arabik" />
+            android:text="@string/lexokuranin_arabik"
+            android:onClick="btnLexoClicked"/>
     </RelativeLayout>
 
 </RelativeLayout>

@@ -107,5 +107,17 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    public void btnLexoClicked(View view) {
+        Intent intent = new Intent(this, QuranActivity.class);
+        if(view.getId()==R.id.btnLexoGjuhe){
+            intent.putExtra("cka","gjuhet");
+        }
+        else if(view.getId()==R.id.btnLexoLatinisht){
+            intent.putExtra("cka","latin");
+        }
+        else if(view.getId()==R.id.btnLexoArabisht){
+            intent.putExtra("cka","arab");
+        }
+        startActivity(intent);
+    }
 }
