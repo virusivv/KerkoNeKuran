@@ -6,9 +6,28 @@
     android:layout_height="match_parent"
     android:background="@drawable/borders"
     tools:context="com.kerko.ne.kuran.QuranActivity">
+
+    <TextView
+        android:id="@+id/txtSelectSurah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="#000000"
+        android:textColorHint="#50505050"
+        android:text="@string/zgjedhsuren_shqip"/>
+    <Spinner
+        android:id="@+id/spnSurahs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_toRightOf="@+id/txtSelectSurah"
+        ></Spinner>
     <TextView
         android:id="@+id/txtPershkrimi"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnSurahs" />
 
 </RelativeLayout>

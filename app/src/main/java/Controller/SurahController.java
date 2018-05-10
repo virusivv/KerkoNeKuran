@@ -55,14 +55,38 @@ public class SurahController {
             ArrayList<String> ajetet = new ArrayList<String>();
             for (int i = 0; i < c.getCount(); i++) {
                 if (returnObject == null) {
-                    returnObject = new SurahObject(c.getInt(0), c.getString(3), new ArrayList<String>());
-                    ajetet.add(c.getString(1));
+                    returnObject = new SurahObject(c.getInt(c.getColumnIndex("_id")), c.getString(c.getColumnIndex("surja_emri")), new ArrayList<String>());
+                    ajetet.add(c.getString(c.getColumnIndex("ajeti")));
                 } else {
-                    ajetet.add(c.getString(1));
+                    ajetet.add(c.getString(c.getColumnIndex("ajeti")));
                 }
                 c.moveToNext();
             }
             returnObject.setAjetet(ajetet);
+            c.close();
+        }
+        return returnObject;
+    }
+
+    public ArrayList<String> getSurahList(String locale, Context context) {
+        if (locale.equals(""))
+            return null;
+        String gjuha = "al";
+        if (locale.equals("zz")) {
+            gjuha = "en";
+        } else if (locale.equals("de")) {
+            gjuha = "de";
+        } else if (locale.equals("tr")) {
+            gjuha = "tr";
+        }
+        ArrayList<String> returnObject = new ArrayList<String>();
+        Cursor c = mDb.rawQuery("select * from tblsuretnekuran_"+gjuha, null);
+        if (c != null) {
+            c.moveToFirst();
+            for (int i = 0; i < c.getCount(); i++) {
+                returnObject.add(c.getString(c.getColumnIndex("suret")));
+                c.moveToNext();
+            }
             c.close();
         }
         return returnObject;
