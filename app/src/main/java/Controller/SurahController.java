@@ -1,5 +1,18 @@
 package Controller;
 
+import android.content.Context;
+import android.database.Cursor;
+import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
+
+import com.kerko.ne.kuran.R;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import Model.AyahListObject;
+import Model.CategoriesListObject;
+import Model.SurahObject;
 /**
  * Created by ivasija on 10.05.2018.
  */
@@ -63,7 +76,5 @@ public class SurahController {
         return returnObject;
     }
 
-
-}
 
 }
