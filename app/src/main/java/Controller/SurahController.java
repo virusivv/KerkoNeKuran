@@ -7,11 +7,15 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.kerko.ne.kuran.R;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import Model.AyahListObject;
 import Model.CategoriesListObject;
+import Model.ListOfSurahsObject;
 import Model.SurahObject;
 /**
  * Created by ivasija on 10.05.2018.
@@ -68,7 +72,8 @@ public class SurahController {
         return returnObject;
     }
 
-    public ArrayList<String> getSurahList(String locale, Context context) {
+    public ArrayList<ListOfSurahsObject> getSurahList(String locale, Context context) {
+
         if (locale.equals(""))
             return null;
         String gjuha = "al";
@@ -79,17 +84,18 @@ public class SurahController {
         } else if (locale.equals("tr")) {
             gjuha = "tr";
         }
-        ArrayList<String> returnObject = new ArrayList<String>();
+
+        ArrayList<ListOfSurahsObject> ReturnObject = new ArrayList<ListOfSurahsObject>();
         Cursor c = mDb.rawQuery("select * from tblsuretnekuran_"+gjuha, null);
         if (c != null) {
             c.moveToFirst();
             for (int i = 0; i < c.getCount(); i++) {
-                returnObject.add(c.getString(c.getColumnIndex("suret")));
+                ReturnObject.add(new ListOfSurahsObject(c.getInt(c.getColumnIndex("_id")),c.getString(c.getColumnIndex("suret"))));
                 c.moveToNext();
             }
             c.close();
         }
-        return returnObject;
+        return ReturnObject;
     }
 
 
