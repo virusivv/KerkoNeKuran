@@ -24,22 +24,13 @@
         android:layout_marginRight="40dp"
         android:layout_toRightOf="@+id/txtSelectSurah"
         ></Spinner>
-        <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/spnSurahs"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginBottom="30dp">
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:id="@+id/txtPershkrimi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="22sp"/>
-            </RelativeLayout>
-        </ScrollView>
-
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spnSurahs"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="30dp"/>
 </RelativeLayout>

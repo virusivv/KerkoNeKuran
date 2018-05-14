@@ -6,11 +6,10 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cf56a2b-0544-49c0-8158-40e1353985d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/Controller/SurahSpinnerAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/Model/ListOfSurahsObject.java" />
+    <list default="true" id="7cf56a2b-0544-49c0-8158-40e1353985d1" name="Default" comment="added file bordersquran.jpg">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/kerko/ne/kuran/ScreenSlidePageFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_pager_item.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/Controller/SurahController.java" afterPath="$PROJECT_DIR$/app/src/main/java/Controller/SurahController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kerko/ne/kuran/QuranActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kerko/ne/kuran/QuranActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_quran.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_quran.xml" />
     </list>
@@ -36,23 +35,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="QuranActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QuranActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kerko/ne/kuran/QuranActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="91" column="5" lean-forward="false" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+            <state relative-caret-position="139">
+              <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding>
-                <element signature="e#684#704#0" expanded="true" />
+                <element signature="e#994#1014#0" expanded="true" />
+                <element signature="e#5729#5730#0" expanded="true" />
+                <element signature="e#5762#5763#0" expanded="true" />
+                <element signature="e#6008#6009#0" expanded="true" />
+                <element signature="e#6048#6049#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_quran.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quran.xml">
+      <file leaf-file-name="FragmentStatePagerAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-fragment/26.1.0/8279b00f5194701ff18363fa2958c5a26670b0ef/support-fragment-26.1.0-sources.jar!/android/support/v4/app/FragmentStatePagerAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="40" column="40" lean-forward="false" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+            <state relative-caret-position="139">
+              <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewPager.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-core-ui/26.1.0/4d52cef4a24bf9939de1d256ca9f0974c6e636a4/support-core-ui-26.1.0-sources.jar!/android/support/v4/view/ViewPager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="1159" column="0" lean-forward="false" selection-start-line="1159" selection-start-column="0" selection-end-line="1159" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdapterView.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-26/android.jar!/android/widget/AdapterView.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScreenSlidePageFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kerko/ne/kuran/ScreenSlidePageFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view_pager_item.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_pager_item.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -61,11 +106,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SurahController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/Controller/SurahController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="71" column="28" lean-forward="false" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+              <folding>
+                <element signature="e#2658#2678#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="layoutResourceFile" />
         <option value="Class" />
       </list>
     </option>
@@ -1806,8 +1864,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/Model/ListOfSurahsObject.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/Controller/SurahController.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/Controller/SurahSpinnerAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/kerko/ne/kuran/QuranActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_quran.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/view_pager_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/kerko/ne/kuran/ScreenSlidePageFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/kerko/ne/kuran/QuranActivity.java" />
       </list>
     </option>
   </component>
@@ -2012,6 +2072,10 @@
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="device.picker.selection" value="Nexus_5X_API_P" />
+    <property name="DEBUGGABLE_DEVICE" value="emulator-5554" />
+    <property name="DEBUGGABLE_PROCESS" value="com.kerko.ne.kuran" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="DEBUGGER_ID" value="Auto" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2389,7 +2453,21 @@
       <option name="project" value="LOCAL" />
       <updated>1525986840468</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added selection for surahs in spinner, everytime the spinner changes the selected item, then the content of the text box will be filled with ayahs from the selected surah">
+      <created>1526031795754</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1526031795754</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added file bordersquran.jpg">
+      <created>1526031859122</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1526031859122</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2404,7 +2482,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2438,7 +2516,9 @@
     <MESSAGE value="Edit Surah Controller" />
     <MESSAGE value="Edited Quran Activity" />
     <MESSAGE value="Added method to get the surah list from DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added method to get the surah list from DB" />
+    <MESSAGE value="Added selection for surahs in spinner, everytime the spinner changes the selected item, then the content of the text box will be filled with ayahs from the selected surah" />
+    <MESSAGE value="added file bordersquran.jpg" />
+    <option name="LAST_COMMIT_MESSAGE" value="added file bordersquran.jpg" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2450,7 +2530,7 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2549,16 +2629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/Controller/SurahController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="e#2658#2678#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/categories_list_item.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-533">
@@ -2581,25 +2651,92 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kerko/ne/kuran/QuranActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="91" column="5" lean-forward="false" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-          <folding>
-            <element signature="e#684#704#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quran.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="40" column="40" lean-forward="false" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+        <state relative-caret-position="283">
+          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/Controller/SurahController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="71" column="28" lean-forward="false" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+          <folding>
+            <element signature="e#2658#2678#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_pager_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-26/android.jar!/android/view/Choreographer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-26/android.jar!/android/widget/AdapterView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-core-ui/26.1.0/4d52cef4a24bf9939de1d256ca9f0974c6e636a4/support-core-ui-26.1.0-sources.jar!/android/support/v4/view/ViewPager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="1159" column="0" lean-forward="false" selection-start-line="1159" selection-start-column="0" selection-end-line="1159" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-fragment/26.1.0/8279b00f5194701ff18363fa2958c5a26670b0ef/support-fragment-26.1.0-sources.jar!/android/support/v4/app/FragmentStatePagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kerko/ne/kuran/ScreenSlidePageFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kerko/ne/kuran/QuranActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding>
+            <element signature="e#994#1014#0" expanded="true" />
+            <element signature="e#5729#5730#0" expanded="true" />
+            <element signature="e#5762#5763#0" expanded="true" />
+            <element signature="e#6008#6009#0" expanded="true" />
+            <element signature="e#6048#6049#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
