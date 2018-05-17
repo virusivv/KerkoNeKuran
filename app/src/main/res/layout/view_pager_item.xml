@@ -1,8 +1,11 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/content"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-
+    <ScrollView
+        android:layout_above="@id/paginationNumber"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <TextView style="?android:textAppearanceMedium"
         android:id="@+id/txtPershkrimi"
         android:padding="16dp"
@@ -10,4 +13,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="empty text" />
-</ScrollView>
+    </ScrollView>
+    <TextView
+        android:id="@+id/paginationNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        />
+</RelativeLayout>

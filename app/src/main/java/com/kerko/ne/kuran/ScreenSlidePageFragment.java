@@ -12,21 +12,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
-import Model.SurahObject;
-
 public class ScreenSlidePageFragment extends Fragment {
     int page;
+    int maxPageNum;
     String ajetet;
     String surja;
 
-    public static ScreenSlidePageFragment newInstance(int page, String ajetet, String surja) {
+    public static ScreenSlidePageFragment newInstance(int page, String ajetet, String surja, int MaxPageNum) {
         ScreenSlidePageFragment fragmentFirst = new ScreenSlidePageFragment();
         Bundle args = new Bundle();
         args.putInt("page", page);
         args.putString("ajetet", ajetet);
         args.putString("surja", surja);
+        args.putInt("maxPageNum",MaxPageNum);
         fragmentFirst.setArguments(args);
         return fragmentFirst;
     }
@@ -37,6 +35,7 @@ public class ScreenSlidePageFragment extends Fragment {
         page = getArguments().getInt("page");
         surja = getArguments().getString("surja");
         ajetet = getArguments().getString("ajetet");
+        maxPageNum=getArguments().getInt("maxPageNum");
     }
 
     @Override
@@ -47,6 +46,10 @@ public class ScreenSlidePageFragment extends Fragment {
 
         TextView txt=(TextView)rootView.findViewById(R.id.txtPershkrimi);
         txt.setText(ajetet);
+
+
+        TextView txtPagination=(TextView)rootView.findViewById(R.id.paginationNumber);
+        txtPagination.setText((page+1)+"/"+maxPageNum);
         return rootView;
     }
 

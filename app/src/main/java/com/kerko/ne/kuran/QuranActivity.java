@@ -81,6 +81,7 @@ public class QuranActivity extends FragmentActivity implements AdapterView.OnIte
 
 
         mPager = (ViewPager) findViewById(R.id.pager);
+
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
     }
@@ -107,23 +108,15 @@ public class QuranActivity extends FragmentActivity implements AdapterView.OnIte
             for(int i=pageNumber * 10;i<pageNumber * 10+10;i++)
                 if(i<objekti.getAjetet().size())
                     sb.append(objekti.getAjetet().get(i)+" {"+(i+1)+"} ");
-            /*if(pageNumber>1)
-                for(int i=(pageNumber+1)*10-10;i<(pageNumber+1)*10-1;i++){
-                    if(i<=objekti.getAjetet().size())
-                        sb.append(objekti.getAjetet().get(i)+" {"+(i+1)+"} ");
-                }
-            else if(pageNumber==1)
-                for(int i=10;i<=19;i++) {
-                    if (i < objekti.getAjetet().size())
-                        sb.append(objekti.getAjetet().get(i)+" {"+(i+1)+"} ");
-                }
-            else {
-                for (int i = 0; i <= 9; i++)
-                    if (i < objekti.getAjetet().size())
-                        sb.append(objekti.getAjetet().get(i)+" {"+(i+1)+"} ");
-            }*/
         }
         return sb.toString();
+    }
+
+    public int getPageNumberForAyah(int ayahID){
+
+        if(ayahID>-1)
+            return ayahID/10;
+        return 0;
     }
 
 
@@ -143,24 +136,44 @@ public class QuranActivity extends FragmentActivity implements AdapterView.OnIte
         mPager = (ViewPager) findViewById(R.id.pager);
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
-
-        TextView txt=(TextView)mPager.findViewById(R.id.txtPershkrimi);
+        ArrayList<String> idList=new ArrayList<>();
+        for(int i=0;i<objekti.getAjetet().size();i++){
+            idList.add(i+1+"");
+        }
+        //TextView txt=(TextView)mPager.findViewById(R.id.txtPershkrimi);
         //txt.setText(sb.toString());
         //Toast.makeText(getApplicationContext(), txt.getTextSize()+" text size", Toast.LENGTH_SHORT).show();
+        Spinner spinner = (Spinner) findViewById(R.id.spnAyahs);
+        ArrayAdapter spinnerArrayAdapter = new ArrayAdapter(this,
+                android.R.layout.simple_spinner_dropdown_item,
+                idList);
+        spinner.setAdapter(spinnerArrayAdapter);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
+            @Override
+            public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+                int selected=arg0.getSelectedItemPosition();
+                int pageNumber=getPageNumberForAyah(selected);
+                mPager.setCurrentItem(pageNumber);
+            }
 
+            @Override
+            public void onNothingSelected(AdapterView<?> arg0) {
 
+            }
+
+        });
     }
     @Override
     public void onBackPressed() {
-        if (mPager.getCurrentItem() == 0) {
+        //if (mPager.getCurrentItem() == 0) {
             // If the user is currently looking at the first step, allow the system to handle the
             // Back button. This calls finish() on this activity and pops the back stack.
             super.onBackPressed();
-        } else {
+        /*} else {
             // Otherwise, select the previous step.
             mPager.setCurrentItem(mPager.getCurrentItem() - 1);
-        }
+        }*/
     }
 
     private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
@@ -170,7 +183,7 @@ public class QuranActivity extends FragmentActivity implements AdapterView.OnIte
 
         @Override
         public Fragment getItem(int position) {
-            return ScreenSlidePageFragment.newInstance(position, get10ItemsForPage(position),objekti.getEmriSures());
+            return ScreenSlidePageFragment.newInstance(position, get10ItemsForPage(position),objekti.getEmriSures(),NUM_PAGES);
         }
 
         @Override

@@ -11,26 +11,53 @@
         android:id="@+id/txtSelectSurah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:layout_marginLeft="40dp"
         android:textColor="#000000"
         android:textColorHint="#50505050"
+        android:layout_toLeftOf="@id/spnSurahs"
+        android:layout_alignTop="@id/spnSurahs"
+        android:layout_alignBottom="@id/spnSurahs"
+        android:gravity="center"
+        android:textAlignment="gravity"
         android:text="@string/zgjedhsuren_shqip"/>
     <Spinner
         android:id="@+id/spnSurahs"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_marginRight="40dp"
-        android:layout_toRightOf="@+id/txtSelectSurah"
+        android:layout_alignParentRight="true"
+        ></Spinner>
+    <TextView
+        android:id="@+id/txtSelectAyah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="#000000"
+        android:textColorHint="#50505050"
+        android:text="@string/zgjedhajetin"
+        android:layout_toLeftOf="@id/spnAyahs"
+        android:layout_alignTop="@id/spnAyahs"
+        android:layout_alignBottom="@id/spnAyahs"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        />
+    <Spinner
+        android:id="@+id/spnAyahs"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spnSurahs"
+        android:layout_marginRight="20dp"
+        android:layout_alignLeft="@id/spnSurahs"
         ></Spinner>
     <android.support.v4.view.ViewPager
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/spnSurahs"
+        android:layout_below="@+id/spnAyahs"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="30dp"/>
+
 </RelativeLayout>

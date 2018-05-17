@@ -2,6 +2,7 @@ package Controller;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -68,7 +69,6 @@ public class SurahSpinnerAdapter extends ArrayAdapter<ListOfSurahsObject> {
         TextView label = (TextView) super.getDropDownView(position, convertView, parent);
         label.setTextColor(Color.BLACK);
         label.setText(values.get(position).getSurah());
-
         return label;
     }
 }
