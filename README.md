@@ -1,5 +1,5 @@
 # KerkoNeKuran
-React native app
+Flutter app
 
 ----------------------------------------------
-This application is the react native version of currently deployed Kerko Ne Kuran in Android.
+This application is the flutter version of currently deployed Kerko Ne Kuran in Android.
